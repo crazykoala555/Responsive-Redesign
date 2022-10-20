@@ -53,6 +53,7 @@
 }
 
 .navBarMobile {
+    font-size: 1.7rem;
     display: none;
     width: 100vw;
     height: 100vh;
@@ -69,9 +70,12 @@
 
 #navItemsMobile {
     display: flex;
+    overflow: scroll;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: flex-start;
 }
 
 #navItemsMobile a {
@@ -80,7 +84,6 @@
     text-align: left;
     margin: 14px 16px;
     text-decoration: none;
-    font-size: 1.5rem;
 
     /*https://css-irl.info/animating-underlines/*/
     background:
