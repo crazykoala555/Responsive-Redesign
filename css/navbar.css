@@ -53,7 +53,8 @@
 }
 
 .navBarMobile {
-    font-size: 1.7rem;
+    overflow: scroll;
+    font-size: 4rem;
     display: none;
     width: 100vw;
     height: 100vh;
@@ -65,12 +66,11 @@
 #exitIcon {
     max-width: 5vw;
     max-height: 5vw;
-    padding-right: 10vh;
+    padding-right: 5vh;
 }
 
 #navItemsMobile {
     display: flex;
-    overflow: scroll;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: nowrap;
