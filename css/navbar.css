@@ -1,0 +1,151 @@
+#navLogo{
+    font-family: headerFonts, sans-serif;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.navBarDesktop {
+    display: flex;
+    z-index: 100;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(76, 76, 76, 1);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+}
+
+#navItemsDesktop{
+    display: flex;
+    align-items: center;
+}
+
+.navBarDesktop a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    margin: 16px 16px;
+    text-decoration: none;
+
+    /*https://css-irl.info/animating-underlines/*/
+    background:
+            linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+            linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.navBarDesktop a:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+.menuIcon {
+    display: none;
+}
+#menuIcon {
+    max-width: 10vw;
+    padding: 1rem;
+}
+
+.navBarMobile {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(76, 76, 76, 0.95);
+    position: fixed;
+    font-family: headerFonts, sans-serif;
+    color: white;
+}
+#exitIcon {
+    max-width: 5vw;
+    max-height: 5vw;
+    padding-right: 10vh;
+}
+
+#navItemsMobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+#navItemsMobile a {
+    display: block;
+    color: #ffffff;
+    text-align: left;
+    margin: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+    /*https://css-irl.info/animating-underlines/*/
+    background:
+            linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+            linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+#navItemsMobile a:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+#titleCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.dropdown-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #323232;
+    min-width: 100%;
+    margin: 0;
+}
+#alumniDropdown{
+    display: none;
+}
+#galleryDropdown{
+    display: none;
+}
+#studentDropdown{
+    display: none;
+}
+
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_text*/
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #323232;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

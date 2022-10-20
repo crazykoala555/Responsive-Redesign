@@ -1,0 +1,18 @@
+#scheduleContainer {
+
+}
+#scheduleContent {
+    text-align: center;
+}
+#scheduleContent h1{
+    font-family: headerFonts, sans-serif;
+    text-align: center;
+    color: #A91010;
+}
+#scheduleContent iframe {
+    height: 75vh;
+    width: 75vw;
+}
+#scheduleContent p {
+    font-family: sans-serif;
+}

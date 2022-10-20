@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    background-color: #F0F7F4;
+}
+@font-face {
+    font-family: headerFonts;
+    src: url('../assets/sui_generis.otf');
+}
+
+#aboutUsContent h1{
+    font-family: headerFonts, sans-serif;
+    text-align: center;
+    color: #A91010;
+}
+#aboutUsContent p{
+    font-family: sans-serif;
+    text-align: center;
+
+}
+#aboutUsContent {
+    max-width: 80vw;
+    margin-left: 10vw;
+}
+
+/*Full screen image background inspired by w3schools tutorial*/
+#introImage{
+    font-family: headerFonts, sans-serif;
+    background-image: url("../assets/introimage_blurred.jpg");
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#introTitle{
+    font-size: 2.5rem;
+}
+#introSlogan{
+    font-size: 1.5rem;
+}
+.introImageWords {
+    /*text-shadow: 2px 4px 2px #000000;*/
+    color: #FFFFFF;
+    text-shadow: 3px 3px 2px #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.redButton {
+    color: white;
+    background: #A91010;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0 #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: headerFonts, sans-serif;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.redButton:hover {
+    background: #EA9E8D;
+    color: black;
+}
+.redButton:active {
+    background-color: #EA9E8D;
+    transform: translateY(4px);
+}
+#learnMore {
+    color: #A91010;
+    font-size: 1.3rem;
+}
+#siteFooter{
+    text-align: center;
+    background-color: #A91010;
+    color: white;
+    font-family: sans-serif;
+    padding: 3vh;
+    margin-top: 2vh;
+}
+#siteFooter p{
+    margin: 0;
+}
+
+#menuIcon {
+    filter: drop-shadow(0 0 3px #ffffff);
+}
